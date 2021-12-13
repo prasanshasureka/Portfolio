@@ -1,0 +1,465 @@
+*{
+	outline: none;
+}
+
+/*-----------------body--------------------------------*/
+
+body{
+	margin: 0px;
+	margin-top: -17px;
+	font-family: sans-serif;
+	/*font-size: 25px;*/
+}
+
+/*----------------------Main Header-------------------------------*/
+
+#percent-scroll{
+	position: absolute;
+	position: fixed;
+	right: 3%;
+	top: 3%;
+	height: 30px;
+	width: 130px;
+	border: 1px solid black;
+	border-radius: 8em;
+	text-align: center;
+}
+
+#percent-scroll p{
+	margin: 5%;
+}
+
+#body-header{
+	background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+	height: 65vh;
+	background-position: center;
+	background-size: cover;
+	padding-top: 1.2rem;
+	opacity: 0.8;
+	background-attachment: fixed;
+}
+
+#name-social-container {
+    margin-top: 18vh;
+}
+
+#name-social-container div{
+    height: 5vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.social-icons li a i {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/*horizontal list*/
+
+.horizontal-list {
+	list-style: none;
+}
+
+.horizontal-list li{
+	display: inline-block;
+	padding: 10px;
+	font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.horizontal-list li a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav-list li a:hover{
+	border-bottom: 1px solid lightgrey;
+	color: lightgrey;
+	transition: color 0.5s border-bottom 4s;
+}
+
+.text-center{
+	text-align: center;
+}
+
+/*main*/
+
+section{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*margin: 30px;*/
+}
+
+section:nth-child(2n){
+	background-color: #eeeeee;
+}
+
+section:nth-child(2n+1){
+	background-color: white;
+}
+
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+	font-weight: 400;
+}
+
+.section-heading span{
+	font-size: 40px;
+	color: #2857a4;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+}
+
+.mb75px{
+	margin-bottom: 50px;
+}
+
+/*about*/
+
+#about{
+	/* position: relative; */
+	height: auto;
+	width: 100%;
+}
+
+#about-image{
+	height: 12rem;
+    width: 12rem;
+    margin: auto;
+	margin-top: -17vh;
+}
+
+#about-image img{
+	height: 100%;
+    width: 100%;
+    border-radius: 60%;
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 10px 10px rgba(230, 196, 196, 0.3);
+}
+
+#about p{
+	font-size: 15px;
+	margin-left: 200px;
+	margin-right: 200px;
+	line-height: 1.5rem;
+	font-weight: 700;
+	color: grey;
+	text-align: justify;
+	/*#2857a4*/
+}
+
+#about p span{
+	color: #2857a4;
+	text-decoration: bolder;
+}
+
+/*skills-section*/
+
+.skills-display{
+	width: 85%;
+	height: auto;
+	/*border: 2px solid black;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.skill-progress{
+	background-color: #bdbdbd;
+	height: 2rem;
+	margin: 30px;
+	width: 12rem;
+	border-radius: 1rem;
+}
+
+.skill-progress>div{
+	padding-left: 10px;
+	height: inherit;
+	border-radius: 1rem;
+}
+
+.skill-name{
+	padding: 5px 0px 0px 5px;
+}
+
+.skill-name span{
+	color: white;
+	font-size: 1rem;
+}
+
+.eighty-five-percent{
+	width: 85%;
+}
+
+.seventy-five-percent{
+	width: 75%;
+}
+
+.fifty-five-percent{
+	width: 55%;
+}
+
+.twenty-five-percent{
+	width: 25%;
+}
+
+.mb-blue{
+	background-color: #2979ff;
+}
+
+.mb-green{
+	background-color: #64dd17;
+}
+
+.mb-yellow{
+	background-color: #ffd600;
+}
+
+/*-----------------work exp, education---------------*/
+
+.timeline-container{
+	position: relative;
+	/*border: 2px solid black;*/
+	width: 75%;
+	padding-bottom: 5%;
+}
+
+.timeline-box{
+	position: relative;
+	/*border: 2px solid black;*/
+	width: 40%;
+	min-height: 150px;
+	margin: 5px;
+	left: 5%;
+}
+
+.timeline-box:nth-child(2n){
+	left: 55%;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	background-color: grey;
+	right: -12.9%;
+	top: 38%;
+	width: 0.5rem;
+	height: 0.5rem;
+	z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	background-color: grey;
+	left: -14.5%;
+	top: 38%;
+	width: 0.5rem;
+	height: 0.5rem;
+	z-index: 1;
+}
+
+.timeline-divider{
+	position: absolute;
+	left: 50%;
+	width: 0;
+	border: 2px dashed lightgrey;
+	height: 75%;
+	top: 10%;
+}
+
+.timeline-traveller{
+	position: sticky;
+	top: 23%;
+	transform: rotate(90deg);
+	z-index: 10;
+	color: darkblue;
+	font-size: 25px;
+}
+
+.work-edu-position{
+	padding: 0.8rem;
+	font-size: 1.3rem;
+	font-weight: bolder;
+	color: darkblue;
+}
+
+.instituition-photo img{
+	position: absolute;
+	top: 5%;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.photo-right img{
+	right: 5%;
+}
+
+.photo-left img{
+	left: 5%;
+}
+
+/*.work-edu-position:nth-child(2n+1)::before{
+	content: '';
+	position: absolute;
+	background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+	background-size: cover;
+	right: 5%;
+	
+	top: 5%;
+	width: 2.5rem;
+	height: 2.5rem;
+}*/
+
+
+.instituition{
+	font-size: 1rem;
+	color: orange;
+	padding: 0.5rem 0.8rem 0rem 0.8rem;
+	font-weight: bold;
+}
+
+.time-period{
+	font-size: 1rem;
+	color: grey;
+	padding: 0rem 0.8rem 0rem 0.8rem;
+}
+
+
+
+.work-edu-description{
+	font-size: 0.9rem;
+	color: grey;
+	padding: 0.3rem 0.8rem 0rem 0.8rem;
+}
+
+.text-align-right{
+	text-align: right;
+}
+
+@media screen and (max-width: 600px){
+	.timeline-divider{
+		left: 5%;
+	}
+
+	.timeline-box{
+		left: 12% !important;
+		width: 80%;
+	}
+
+	.timeline-box::after{
+		left: -11% !important;
+	}
+
+
+}
+
+
+/*--------------------portfolio------------*/
+
+.portfolio-display{
+	height: auto;
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.project img{
+	/*height: 80%;
+	width: 40%;*/
+	/*height: 40vh;
+	width: 20vw;*/
+	height: 15em;
+	width: 15em;
+}
+
+
+/*-------------contact---------------*/
+
+#contact{
+	background-image: linear-gradient(150deg, #2857a4, #403066);
+	height: auto;
+}
+
+.contact-heading span{
+	color: white;
+}
+
+.contact-get-in-touch-section{
+	display: flex;
+	flex-direction: row;
+	margin: 0rem 6rem 1rem 6rem;
+}
+
+.contact-get-in-touch-section p{
+	margin-top: -3px;
+}
+
+.contact-get-in-touch-section div{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 50%;
+	padding: 0rem 2rem 0rem 2rem;
+	line-height: 1rem;
+	justify-content: center;
+	/*border: 2px solid black;*/
+}
+
+#contact-input input, #contact-input textarea{
+	display: block;
+	margin: 1.2rem;
+	width: 35vw;
+	background-color: inherit;
+	border-style: none;
+	border-bottom: 2px solid lightgrey;
+}
+
+::placeholder { 
+  color: grey;
+  opacity: 1; 
+  font-size: 0.9rem;
+ }
+
+#contact-input button{
+	width: 15vw;
+	margin-top: 5vh;
+	margin-left: 12vw;
+	height: 7vh;
+	font-size: 1rem;
+	background-color: inherit;
+	border: 2px solid white;
+	color: white;
+}
+
+.get-in-touch-heading{
+	color: white;
+	font-size: 1.3rem;
+}
+
+#get-in-touch p{
+	color: white;
+	font-size: 0.9rem;
+}
